@@ -1,0 +1,4 @@
+location,num_of_unique_IPs_used,login_count,num_of_frequent_operations,c2c_place_order_count,c2c_release_order_count,gift_card_created_amount,gift_card_redeemed_amount,amount,wallet_balance,wallet_free_balance,wallet_locked_balance,deposit_status,transaction_time,prev_transaction_time,account_age_days
+Islamabad,3,5,13,9,5,0,0.0,812.21,4704.45,2509.84,940.56,Completed,2024-02-28 14:27:13,2024-02-02 08:44:25,607
+Karachi,3,5,17,7,5,0,0.0,1.0,500000.0,2.0,0.0,Completed,2024-04-07 19:37:57,2024-03-13 23:29:48,304
+Rawalpindi,3,11,20,7,1,0,37.51,160.24,1715.62,2372.89,832.61,Completed,2024-12-12 19:35:17,2024-12-05 17:28:14,951

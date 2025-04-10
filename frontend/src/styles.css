@@ -1,0 +1,42 @@
+.container {
+  text-align: center;
+  margin: 20px;
+}
+
+.file-upload {
+  margin-bottom: 20px;
+}
+
+.table-container {
+  max-width: 900px;
+  max-height: 400px;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.normal {
+  background-color: #c8e6c9;
+  /* Green */
+}
+
+.anomalous {
+  background-color: #fff59d;
+  /* Yellow */
+}
+
+.fraudulent {
+  background-color: #ef9a9a;
+  /* Red */
+}
