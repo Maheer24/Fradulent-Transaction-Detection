@@ -17,7 +17,11 @@ const App = () => {
         // Set the array of image URLs
         setImageUrls([
           response.pie_image_url,
-          response.ip_box_plot_url,
+          response.location_bar_chart_url,
+          response.unique_ips_by_category_url,
+          response.wallet_balance_account_age_bubble_chart_url,
+          response.deposit_status_pie_chart_url,
+        //response.radar_chart_transaction_profiles_url,
         ]);
       }
     } catch (error) {

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2025-04-09T15:18:28.903634</dc:date>
+    <dc:date>2025-04-19T18:20:55.159857</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -281,10 +281,10 @@ z
    <g id="legend_1">
     <g id="patch_5">
      <path d="M 689.2 274.380469 
-L 767.901563 274.380469 
-Q 769.901563 274.380469 769.901563 272.380469 
-L 769.901563 213.619531 
-Q 769.901563 211.619531 767.901563 211.619531 
+L 769.260938 274.380469 
+Q 771.260938 274.380469 771.260938 272.380469 
+L 771.260938 213.619531 
+Q 771.260938 211.619531 769.260938 211.619531 
 L 689.2 211.619531 
 Q 687.2 211.619531 687.2 213.619531 
 L 687.2 272.380469 
@@ -294,7 +294,7 @@ z
     </g>
     <g id="text_4">
      <!-- Category -->
-     <g transform="translate(709.48125 223.119531) scale(0.1 -0.1)">
+     <g transform="translate(710.160938 223.119531) scale(0.1 -0.1)">
       <defs>
        <path id="Cabin-Regular-43" d="M 2509 -90 
 Q 1856 -90 1345 196 
@@ -555,9 +555,26 @@ z
 " style="fill: #bde0fe; stroke: #ffffff; stroke-linejoin: miter"/>
     </g>
     <g id="text_5">
-     <!-- anomalous -->
+     <!-- Anomalous -->
      <g transform="translate(719.2 238.119531) scale(0.1 -0.1)">
       <defs>
+       <path id="Cabin-Regular-41" d="M 2931 1210 
+L 1011 1210 
+L 1011 1760 
+L 2931 1760 
+L 2931 1210 
+z
+M 1882 3885 
+L 2061 3885 
+L 685 0 
+L 45 0 
+L 1651 4480 
+L 2291 4480 
+L 3898 0 
+L 3258 0 
+L 1882 3885 
+z
+" transform="scale(0.015625)"/>
        <path id="Cabin-Regular-6e" d="M 390 0 
 L 390 3136 
 L 838 3136 
@@ -689,15 +706,15 @@ Q 1760 -64 1280 -64
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#Cabin-Regular-61"/>
-      <use xlink:href="#Cabin-Regular-6e" x="48"/>
-      <use xlink:href="#Cabin-Regular-6f" x="103.900009"/>
-      <use xlink:href="#Cabin-Regular-6d" x="158.900009"/>
-      <use xlink:href="#Cabin-Regular-61" x="246.600021"/>
-      <use xlink:href="#Cabin-Regular-6c" x="294.600021"/>
-      <use xlink:href="#Cabin-Regular-6f" x="318.200027"/>
-      <use xlink:href="#Cabin-Regular-75" x="373.200027"/>
-      <use xlink:href="#Cabin-Regular-73" x="425.600037"/>
+      <use xlink:href="#Cabin-Regular-41"/>
+      <use xlink:href="#Cabin-Regular-6e" x="61.600006"/>
+      <use xlink:href="#Cabin-Regular-6f" x="117.500015"/>
+      <use xlink:href="#Cabin-Regular-6d" x="172.500015"/>
+      <use xlink:href="#Cabin-Regular-61" x="260.200027"/>
+      <use xlink:href="#Cabin-Regular-6c" x="308.200027"/>
+      <use xlink:href="#Cabin-Regular-6f" x="331.800034"/>
+      <use xlink:href="#Cabin-Regular-75" x="386.800034"/>
+      <use xlink:href="#Cabin-Regular-73" x="439.200043"/>
      </g>
     </g>
     <g id="patch_7">
@@ -709,14 +726,29 @@ z
 " style="fill: #a2d2ff; stroke: #ffffff; stroke-linejoin: miter"/>
     </g>
     <g id="text_6">
-     <!-- normal -->
+     <!-- Normal -->
      <g transform="translate(719.2 253.039844) scale(0.1 -0.1)">
-      <use xlink:href="#Cabin-Regular-6e"/>
-      <use xlink:href="#Cabin-Regular-6f" x="55.900009"/>
-      <use xlink:href="#Cabin-Regular-72" x="110.900009"/>
-      <use xlink:href="#Cabin-Regular-6d" x="142.500015"/>
-      <use xlink:href="#Cabin-Regular-61" x="230.200027"/>
-      <use xlink:href="#Cabin-Regular-6c" x="278.200027"/>
+      <defs>
+       <path id="Cabin-Regular-4e" d="M 512 0 
+L 512 4480 
+L 1171 4480 
+L 3379 1126 
+L 3379 4480 
+L 3994 4480 
+L 3994 0 
+L 3475 0 
+L 1120 3539 
+L 1120 0 
+L 512 0 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#Cabin-Regular-4e"/>
+      <use xlink:href="#Cabin-Regular-6f" x="70.400009"/>
+      <use xlink:href="#Cabin-Regular-72" x="125.400009"/>
+      <use xlink:href="#Cabin-Regular-6d" x="157.000015"/>
+      <use xlink:href="#Cabin-Regular-61" x="244.700027"/>
+      <use xlink:href="#Cabin-Regular-6c" x="292.700027"/>
      </g>
     </g>
     <g id="patch_8">
@@ -728,30 +760,20 @@ z
 " style="fill: #ffc8dd; stroke: #ffffff; stroke-linejoin: miter"/>
     </g>
     <g id="text_7">
-     <!-- fraudulent -->
+     <!-- Fraudulent -->
      <g transform="translate(719.2 267.960156) scale(0.1 -0.1)">
       <defs>
-       <path id="Cabin-Regular-66" d="M 608 0 
-L 608 2688 
-L 64 2688 
-L 141 3136 
-L 608 3136 
-L 608 3878 
-Q 608 4298 832 4549 
-Q 1056 4800 1491 4800 
-Q 1651 4800 1771 4777 
-Q 1891 4755 1990 4717 
-L 1901 4230 
-Q 1824 4259 1750 4273 
-Q 1677 4288 1581 4288 
-Q 1395 4288 1289 4184 
-Q 1184 4080 1184 3840 
-L 1184 3136 
-L 2029 3136 
-L 2029 2688 
-L 1184 2688 
-L 1184 0 
-L 608 0 
+       <path id="Cabin-Regular-46" d="M 512 0 
+L 512 4480 
+L 3245 4480 
+L 3245 3930 
+L 1120 3930 
+L 1120 2618 
+L 2758 2618 
+L 2758 2067 
+L 1120 2067 
+L 1120 0 
+L 512 0 
 z
 " transform="scale(0.015625)"/>
        <path id="Cabin-Regular-64" d="M 1632 -64 
@@ -789,16 +811,16 @@ Q 1440 448 1734 448
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#Cabin-Regular-66"/>
-      <use xlink:href="#Cabin-Regular-72" x="33.100006"/>
-      <use xlink:href="#Cabin-Regular-61" x="64.700012"/>
-      <use xlink:href="#Cabin-Regular-75" x="112.700012"/>
-      <use xlink:href="#Cabin-Regular-64" x="165.100021"/>
-      <use xlink:href="#Cabin-Regular-75" x="220.600021"/>
-      <use xlink:href="#Cabin-Regular-6c" x="273.000031"/>
-      <use xlink:href="#Cabin-Regular-65" x="296.600037"/>
-      <use xlink:href="#Cabin-Regular-6e" x="347.800049"/>
-      <use xlink:href="#Cabin-Regular-74" x="403.700058"/>
+      <use xlink:href="#Cabin-Regular-46"/>
+      <use xlink:href="#Cabin-Regular-72" x="52.300003"/>
+      <use xlink:href="#Cabin-Regular-61" x="83.900009"/>
+      <use xlink:href="#Cabin-Regular-75" x="131.900009"/>
+      <use xlink:href="#Cabin-Regular-64" x="184.300018"/>
+      <use xlink:href="#Cabin-Regular-75" x="239.800018"/>
+      <use xlink:href="#Cabin-Regular-6c" x="292.200027"/>
+      <use xlink:href="#Cabin-Regular-65" x="315.800034"/>
+      <use xlink:href="#Cabin-Regular-6e" x="367.000046"/>
+      <use xlink:href="#Cabin-Regular-74" x="422.900055"/>
      </g>
     </g>
    </g>

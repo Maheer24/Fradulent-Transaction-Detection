@@ -9,46 +9,28 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from fastapi.staticfiles import StaticFiles
 import os
-from pywaffle import Waffle
-from urllib.request import urlopen
-from matplotlib.font_manager import FontProperties
-from matplotlib.patches import Rectangle
-
-from highlight_text import fig_text, ax_text
-import itertools
-import tempfile
-import urllib.request
-from charts import pie_chart, box_plot
-
-
-def load_font_from_url(url):
-    # Download font file to a temporary location
-    tmp_dir = tempfile.gettempdir()
-    font_path = os.path.join(tmp_dir, os.path.basename(url))
-    if not os.path.exists(font_path):
-        urllib.request.urlretrieve(url, font_path)
-    return FontProperties(fname=font_path)
-
-
-outfit_font = load_font_from_url(
-    "https://github.com/Outfitio/Outfit-Fonts/raw/main/fonts/ttf/Outfit-Bold.ttf"
+from charts import (
+    pie_chart,
+    cases_by_location,
+    unique_ips_by_category,
+    wallet_balance_account_age_bubble_chart,
+    deposit_status_pie_chart,
+    radar_chart_transaction_profiles,
 )
-cabin_font = load_font_from_url(
-    "https://github.com/google/fonts/raw/main/ofl/cabin/Cabin%5Bwdth,wght%5D.ttf"
-)
+
 
 app = FastAPI()
 
 app.mount("/images", StaticFiles(directory="images"), name="images")
 
-origins = ["http://localhost:5173"]
+origins = ["http://localhost:5174"]
 
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5174"],
 )
 
 # Load the trained model
@@ -170,36 +152,25 @@ async def download_csv(filename: str):
         return JSONResponse(content={"error": str(e)})
 
 
-# @app.post("/display_images")
-# async def display_images(filename: str):
-#     try:
-#         df = processed_df[filename]
-#         print(df.head())
-#         plt.figure(figsize=(10, 5))
-#         sns.boxplot(x="num_of_unique_IPs_used", y="category", data=df)
-#         os.makedirs("images", exist_ok=True)
-#         image_path = os.path.join("images", "ips_used_boxplot.svg")
-#         plt.savefig(image_path, format="svg")
-#         plt.close()
-
-#         return {"image_url": "/images/ips_used_boxplot.svg"}
-
-#     except Exception as e:
-#         return JSONResponse(content={"error": str(e)})
-
-
 @app.post("/display_images")
 async def display_images(filename: str):
     try:
         df = processed_df[filename]
-        pie_image_url = pie_chart(df)
-        ip_box_plot_url = box_plot(df)
-        print(f"pie_image_url: {pie_image_url}")
-        print(f"ip_box_plot_url: {ip_box_plot_url}")
+
+        pie_chart(df)
+        cases_by_location(df)
+        unique_ips_by_category(df)
+        wallet_balance_account_age_bubble_chart(df)
+        deposit_status_pie_chart(df)
+        radar_chart_transaction_profiles(df)
 
         return {
             "pie_image_url": f"/images/pie_chart.svg",
-            "ip_box_plot_url": f"/images/ip_box_plot.svg",
+            "location_bar_chart_url": f"/images/location_bar_chart.svg",
+            "unique_ips_by_category_url": f"/images/unique_ip_bar_chart.svg",
+            "wallet_balance_account_age_bubble_chart_url": f"/images/wallet_bal_acc_age_bubble_chart.svg",
+            "deposit_status_pie_chart_url": f"/images/deposit_status_pie_chart.svg",
+            "radar_chart_transaction_profiles_url": f"/images/radar_chart_transaction_profiles.svg",
         }
 
         # return {
